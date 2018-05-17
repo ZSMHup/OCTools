@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9856BE6B47B790B9F250BD5D /* libPods-OCTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 393C4977F2BB9FD16B5FF6E1 /* libPods-OCTools.a */; };
 		E183D16220AD205F00FF986C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E183D16120AD205F00FF986C /* AppDelegate.m */; };
 		E183D16520AD205F00FF986C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E183D16420AD205F00FF986C /* ViewController.m */; };
 		E183D16A20AD205F00FF986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183D16920AD205F00FF986C /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393C4977F2BB9FD16B5FF6E1 /* libPods-OCTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		632D65CDD0847B11CBBB4614 /* Pods-OCTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCTools/Pods-OCTools.debug.xcconfig"; sourceTree = "<group>"; };
+		BFB90EC66E23D9521A7DEE78 /* Pods-OCTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCTools/Pods-OCTools.release.xcconfig"; sourceTree = "<group>"; };
 		E183D15D20AD205F00FF986C /* OCTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E183D16020AD205F00FF986C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E183D16120AD205F00FF986C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9856BE6B47B790B9F250BD5D /* libPods-OCTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35B3E3120C6AC889C5F228C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				393C4977F2BB9FD16B5FF6E1 /* libPods-OCTools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E59EC3935286B329969A2C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				632D65CDD0847B11CBBB4614 /* Pods-OCTools.debug.xcconfig */,
+				BFB90EC66E23D9521A7DEE78 /* Pods-OCTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E183D15420AD205F00FF986C = {
 			isa = PBXGroup;
 			children = (
 				E183D15F20AD205F00FF986C /* OCTools */,
 				E183D15E20AD205F00FF986C /* Products */,
+				9E59EC3935286B329969A2C5 /* Pods */,
+				35B3E3120C6AC889C5F228C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E183D17320AD205F00FF986C /* Build configuration list for PBXNativeTarget "OCTools" */;
 			buildPhases = (
+				853F3CBE8D6BF6345461614C /* [CP] Check Pods Manifest.lock */,
 				E183D15920AD205F00FF986C /* Sources */,
 				E183D15A20AD205F00FF986C /* Frameworks */,
 				E183D15B20AD205F00FF986C /* Resources */,
@@ -140,6 +165,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		853F3CBE8D6BF6345461614C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E183D15920AD205F00FF986C /* Sources */ = {
@@ -272,6 +318,7 @@
 		};
 		E183D17420AD205F00FF986C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632D65CDD0847B11CBBB4614 /* Pods-OCTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +334,7 @@
 		};
 		E183D17520AD205F00FF986C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB90EC66E23D9521A7DEE78 /* Pods-OCTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
