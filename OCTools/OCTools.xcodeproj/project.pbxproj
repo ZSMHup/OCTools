@@ -13,6 +13,12 @@
 		E183D16A20AD205F00FF986C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E183D16920AD205F00FF986C /* Assets.xcassets */; };
 		E183D16D20AD205F00FF986C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183D16B20AD205F00FF986C /* LaunchScreen.storyboard */; };
 		E183D17020AD205F00FF986C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E183D16F20AD205F00FF986C /* main.m */; };
+		E194E03E20AEAE6A00A84E5C /* NetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E03B20AEAE6A00A84E5C /* NetworkCache.m */; };
+		E194E03F20AEAE6A00A84E5C /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E03D20AEAE6A00A84E5C /* NetworkHelper.m */; };
+		E194E04220AEAEB400A84E5C /* LiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E04020AEAEB400A84E5C /* LiveListModel.m */; };
+		E194E04A20AEAEE700A84E5C /* NetWorkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E04520AEAEE700A84E5C /* NetWorkRequest.m */; };
+		E194E04B20AEAEE700A84E5C /* NetworkRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E04720AEAEE700A84E5C /* NetworkRequestManager.m */; };
+		E194E04C20AEAEE700A84E5C /* NetworkRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E194E04920AEAEE700A84E5C /* NetworkRequestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,18 @@
 		E183D16C20AD205F00FF986C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E183D16E20AD205F00FF986C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E183D16F20AD205F00FF986C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E194E03A20AEAE6A00A84E5C /* NetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCache.h; sourceTree = "<group>"; };
+		E194E03B20AEAE6A00A84E5C /* NetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCache.m; sourceTree = "<group>"; };
+		E194E03C20AEAE6A00A84E5C /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		E194E03D20AEAE6A00A84E5C /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		E194E04020AEAEB400A84E5C /* LiveListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveListModel.m; sourceTree = "<group>"; };
+		E194E04120AEAEB400A84E5C /* LiveListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveListModel.h; sourceTree = "<group>"; };
+		E194E04420AEAEE700A84E5C /* NetWorkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkRequest.h; sourceTree = "<group>"; };
+		E194E04520AEAEE700A84E5C /* NetWorkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkRequest.m; sourceTree = "<group>"; };
+		E194E04620AEAEE700A84E5C /* NetworkRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestManager.h; sourceTree = "<group>"; };
+		E194E04720AEAEE700A84E5C /* NetworkRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestManager.m; sourceTree = "<group>"; };
+		E194E04820AEAEE700A84E5C /* NetworkRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequestModel.h; sourceTree = "<group>"; };
+		E194E04920AEAEE700A84E5C /* NetworkRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequestModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,10 @@
 				E183D16120AD205F00FF986C /* AppDelegate.m */,
 				E183D16320AD205F00FF986C /* ViewController.h */,
 				E183D16420AD205F00FF986C /* ViewController.m */,
+				E194E04120AEAEB400A84E5C /* LiveListModel.h */,
+				E194E04020AEAEB400A84E5C /* LiveListModel.m */,
+				E194E04320AEAEE700A84E5C /* NetworkRequestManager */,
+				E194E03920AEAE6A00A84E5C /* NetworkHelper */,
 				E183D17620AD209B00FF986C /* Other */,
 			);
 			path = OCTools;
@@ -100,6 +122,30 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		E194E03920AEAE6A00A84E5C /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E194E03A20AEAE6A00A84E5C /* NetworkCache.h */,
+				E194E03B20AEAE6A00A84E5C /* NetworkCache.m */,
+				E194E03C20AEAE6A00A84E5C /* NetworkHelper.h */,
+				E194E03D20AEAE6A00A84E5C /* NetworkHelper.m */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		E194E04320AEAEE700A84E5C /* NetworkRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				E194E04420AEAEE700A84E5C /* NetWorkRequest.h */,
+				E194E04520AEAEE700A84E5C /* NetWorkRequest.m */,
+				E194E04620AEAEE700A84E5C /* NetworkRequestManager.h */,
+				E194E04720AEAEE700A84E5C /* NetworkRequestManager.m */,
+				E194E04820AEAEE700A84E5C /* NetworkRequestModel.h */,
+				E194E04920AEAEE700A84E5C /* NetworkRequestModel.m */,
+			);
+			path = NetworkRequestManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +157,7 @@
 				E183D15920AD205F00FF986C /* Sources */,
 				E183D15A20AD205F00FF986C /* Frameworks */,
 				E183D15B20AD205F00FF986C /* Resources */,
+				C24CA626EB658DC2F3738654 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +232,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C24CA626EB658DC2F3738654 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCTools/Pods-OCTools-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCTools/Pods-OCTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,9 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E194E04B20AEAEE700A84E5C /* NetworkRequestManager.m in Sources */,
 				E183D16520AD205F00FF986C /* ViewController.m in Sources */,
 				E183D17020AD205F00FF986C /* main.m in Sources */,
+				E194E04C20AEAEE700A84E5C /* NetworkRequestModel.m in Sources */,
 				E183D16220AD205F00FF986C /* AppDelegate.m in Sources */,
+				E194E04220AEAEB400A84E5C /* LiveListModel.m in Sources */,
+				E194E03E20AEAE6A00A84E5C /* NetworkCache.m in Sources */,
+				E194E04A20AEAEE700A84E5C /* NetWorkRequest.m in Sources */,
+				E194E03F20AEAE6A00A84E5C /* NetworkHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
