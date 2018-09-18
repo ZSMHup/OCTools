@@ -10,12 +10,14 @@
 #import "LiveListModel.h"
 #import <MJRefresh/MJRefresh.h>
 #import "NetworkRequest.h"
+#import "TestViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray <LiveListModel *> *dataSource;
 @property (nonatomic, assign) NSInteger page;
+
 
 @end
 
@@ -25,13 +27,17 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    [self addTableView];
-    [self.tableView.mj_header beginRefreshing];
-    
+//    [self addTableView];
+//    [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    TestViewController *testVc = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:testVc animated:YES];
 }
 
 - (void)loadData {
-    NSString *page = [NSString stringWithFormat:@"%ld",self.page];
+    NSString *page = [NSString stringWithFormat:@"%ld",(long)self.page];
     NSDictionary *dic = @{
                           @"requestCode":@"80003",
                           @"user_id":@"110430",
@@ -86,7 +92,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"cell -- %ld", indexPath.row);
+    NSLog(@"cell -- %ld", (long)indexPath.row);
 }
 
 - (void)addTableView {
